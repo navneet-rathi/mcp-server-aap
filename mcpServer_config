@@ -1,0 +1,102 @@
+"mcpServers": {
+"aap-mcp-job-management": {
+"command": "npx",
+"args": [
+"-y",
+"mcp-remote",
+"http://aap_fqdn:3000/mcp/job_management",
+"--transport",
+"http-only",
+"--header",
+"Authorization:${AAP_AUTH_HEADER}",
+"--allow-http"
+],
+"env": {
+"AAP_AUTH_HEADER": "Bearer token"
+}
+},
+"aap-mcp-inventory-management": {
+"command": "npx",
+"args": [
+"-y",
+"mcp-remote",
+"http://aap_fqdn:3000/mcp/inventory_management",
+"--transport",
+"http-only",
+"--header",
+"Authorization:${AAP_AUTH_HEADER}",
+"--allow-http"
+],
+"env": {
+"AAP_AUTH_HEADER": "Bearer token"
+
+
+
+}
+},
+"aap-mcp-system-monitoring": {
+"command": "npx",
+"args": [
+"-y",
+"mcp-remote",
+"http://aap_fqdn:3000/mcp/system_monitoring",
+"--transport",
+"http-only",
+"--header",
+"Authorization:${AAP_AUTH_HEADER}",
+"--allow-http"
+],
+"env": {
+"AAP_AUTH_HEADER": "Bearer token"
+}
+},
+"aap-mcp-user-management": {
+"command": "npx",
+"args": [
+"-y",
+"mcp-remote",
+"http://aap_fqdn:3000/mcp/user_management",
+"--transport",
+"http-only",
+"--header",
+"Authorization:${AAP_AUTH_HEADER}",
+"--allow-http"
+],
+"env": {
+"AAP_AUTH_HEADER": "Bearer token"
+}
+},
+"aap-mcp-security-compliance": {
+"command": "npx",
+"args": [
+"-y",
+"mcp-remote",
+"http://aap_fqdn:3000/mcp/security_compliance",
+"--transport",
+"http-only",
+"--header",
+"Authorization:${AAP_AUTH_HEADER}",
+"--allow-http"
+],
+"env": {
+"AAP_AUTH_HEADER": "Bearer token"
+}
+},
+"aap-mcp-platform-configuration": {
+"command": "npx",
+"args": [
+"-y",
+"mcp-remote",
+"http://aap_fqdn:3000/mcp/platform_configuration",
+
+"--transport",
+"http-only",
+"--header",
+"Authorization:${AAP_AUTH_HEADER}",
+"--allow-http"
+],
+"env": {
+"AAP_AUTH_HEADER": "Bearer token"
+}
+}
+}
